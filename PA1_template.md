@@ -64,7 +64,7 @@ Creating standart histogram with title and name of X axis
 tab_total_steps <- hist(total_steps$steps, breaks = 20, main = "Steps taken per day", xlab = "Steps")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](instructions_fig/unnamed-chunk-6-1.png)
 
 ### Calculate and report the mean and median of the total number of steps taken per day
 
