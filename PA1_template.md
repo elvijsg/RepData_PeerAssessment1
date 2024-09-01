@@ -98,7 +98,7 @@ Creating plot with type = "l"
 tab_avg_steps <- plot(avg_steps$interval, avg_steps$steps, type = "l", main = "Average number of steps", xlab = "Intervals of 5 minutes", ylab = "Average number of steps")
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](instructions_fig/unnamed-chunk-9-1.png)
 
 ### Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 Finding the max value and selecting the corresponding interval among all dates with which.max()
@@ -167,7 +167,7 @@ total_steps_updated <- aggregate(steps ~ date, data = activity_updated, sum, na.
 tab_total_steps_upd <- hist(total_steps_updated$steps, breaks = 20, main = "Steps taken per day (updated)", xlab = "Steps")
 ```
 
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
+![plot of chunk unnamed-chunk-15](instructions_fig/unnamed-chunk-15-1.png)
 
 ``` r
 mean(total_steps_updated$steps)
@@ -216,4 +216,4 @@ tab_avg_steps_2 <- xyplot(steps ~ interval | week, data = avg_steps_updated, typ
 tab_avg_steps_2
 ```
 
-![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png)
+![plot of chunk unnamed-chunk-17](instructions_fig/unnamed-chunk-17-1.png)
